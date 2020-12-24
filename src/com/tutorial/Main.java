@@ -1,14 +1,12 @@
 package com.tutorial;
 
-import com.tutorial.examples.Classification;
-import net.sf.javaml.classification.Classifier;
+import com.tutorial.classification.DatasetWriter;
 
 public class Main {
 
     public static void main(String[] args) {
-        Classification.createAndEvaluateKnnClassifier();
-        Classification.crossValidate();
-        Classification.createAndValidateClassifierFromWeka();
+        DatasetWriter resistorWriter = new DatasetWriter(Constants.RESISTORS, "resistor", 10);
+        resistorWriter.writeFile();
     }
 
 }

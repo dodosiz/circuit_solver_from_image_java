@@ -1,5 +1,6 @@
 package com.tutorial.examples;
 
+import com.tutorial.Constants;
 import net.sf.javaml.classification.Classifier;
 import net.sf.javaml.classification.KNearestNeighbors;
 import net.sf.javaml.classification.evaluation.CrossValidation;
@@ -22,7 +23,7 @@ public class Classification {
     public static void createAndEvaluateKnnClassifier() {
         try {
             // load a data set to train the classifier
-            File datasetFile = new File(Constants.RESOURCES_PATH + "iris.data");
+            File datasetFile = new File(Constants.EXAMPLE_RESOURCES + "iris.data");
             Dataset dataset = FileHandler.loadDataset(datasetFile, 4, ",");
             // create a K Nearest Neighbors classifier and train it with the data set
             Classifier knn = new KNearestNeighbors(5);
@@ -41,7 +42,7 @@ public class Classification {
     public static void crossValidate() {
         try {
             // load the dataset to use during the cross validation
-            File datasetFile = new File(Constants.RESOURCES_PATH + "iris.data");
+            File datasetFile = new File(Constants.EXAMPLE_RESOURCES + "iris.data");
             Dataset dataset = FileHandler.loadDataset(datasetFile, 4, ",");
             // create a classifier
             Classifier knn = new KNearestNeighbors(5);
@@ -59,7 +60,7 @@ public class Classification {
      */
     public static void createAndValidateClassifierFromWeka() {
         try {
-            File datasetFile = new File(Constants.RESOURCES_PATH + "iris.data");
+            File datasetFile = new File(Constants.EXAMPLE_RESOURCES + "iris.data");
             Dataset dataset = FileHandler.loadDataset(datasetFile, 4, ",");
             SMO smo = new SMO();
             // wrapper class to use the classifier from java ml

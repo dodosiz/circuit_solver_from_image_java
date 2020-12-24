@@ -1,5 +1,6 @@
 package com.tutorial.examples;
 
+import com.tutorial.Constants;
 import net.sf.javaml.core.Dataset;
 import net.sf.javaml.core.DefaultDataset;
 import net.sf.javaml.core.DenseInstance;
@@ -57,7 +58,7 @@ public class GettingStarted {
      * How to load a data set from an external file
      */
     public static void loadDataSetFromFile() {
-        File datasetFile = new File(Constants.RESOURCES_PATH + "iris.data");
+        File datasetFile = new File(Constants.EXAMPLE_RESOURCES + "iris.data");
         try {
             // to load a file we need the file, the index of the label and the separator character
             Dataset dataset = FileHandler.loadDataset(datasetFile, 4, ",");
@@ -72,7 +73,7 @@ public class GettingStarted {
      * How to load a sparse data set from an external file
      */
     public static void loadSparseDataSet() {
-        File datasetFile = new File(Constants.RESOURCES_PATH + "sparse.tsv");
+        File datasetFile = new File(Constants.EXAMPLE_RESOURCES + "sparse.tsv");
         try {
             // to load a file we need the file, the index of the label, the attribute separator
             // and the separator between index and value
