@@ -1,6 +1,6 @@
-package com.tutorial;
+package com.circuit_solver;
 
-import com.tutorial.classification.DatasetWriter;
+import com.circuit_solver.classification.DatasetWriter;
 
 public class Main {
 

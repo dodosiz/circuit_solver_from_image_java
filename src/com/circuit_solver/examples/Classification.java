@@ -1,6 +1,6 @@
-package com.tutorial.examples;
+package com.circuit_solver.examples;
 
-import com.tutorial.Constants;
+import com.circuit_solver.Constants;
 import net.sf.javaml.classification.Classifier;
 import net.sf.javaml.classification.KNearestNeighbors;
 import net.sf.javaml.classification.evaluation.CrossValidation;

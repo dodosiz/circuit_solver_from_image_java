@@ -1,4 +1,4 @@
-package com.tutorial;
+package com.circuit_solver;
 
 public class Constants {
     public static String EXAMPLE_RESOURCES = "C:\\dev\\java_tutorial\\resources\\example_data_sets\\";

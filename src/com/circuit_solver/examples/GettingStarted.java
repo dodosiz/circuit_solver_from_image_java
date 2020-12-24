@@ -1,6 +1,6 @@
-package com.tutorial.examples;
+package com.circuit_solver.examples;
 
-import com.tutorial.Constants;
+import com.circuit_solver.Constants;
 import net.sf.javaml.core.Dataset;
 import net.sf.javaml.core.DefaultDataset;
 import net.sf.javaml.core.DenseInstance;

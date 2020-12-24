@@ -1,6 +1,4 @@
-package com.tutorial.classification;
-
-import com.tutorial.Constants;
+package com.circuit_solver.classification;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
