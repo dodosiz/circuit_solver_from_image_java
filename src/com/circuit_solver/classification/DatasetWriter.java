@@ -50,9 +50,15 @@ public class DatasetWriter {
     private String printInstance(List<String> coordinates, String label) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(label + " ");
+        int counter = 0;
         for (String coordinate : coordinates) {
             stringBuilder.append(coordinate + " ");
+            counter++;
+            if (counter > 300) {
+                break;
+            }
         }
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         stringBuilder.append("\n");
         return stringBuilder.toString();
     }
