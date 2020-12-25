@@ -1,6 +1,6 @@
 package com.circuit_solver.classification;
 
-import com.circuit_solver.Constants;
+import com.circuit_solver.utils.Constants;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
