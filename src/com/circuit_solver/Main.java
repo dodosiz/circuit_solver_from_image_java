@@ -28,7 +28,7 @@ public class Main {
         Dataset trainingDataset = readTainingDataset();
         KNearestNeighbors classifier = new KNearestNeighbors(5);
         classifier.buildClassifier(trainingDataset);
-        System.out.println(classifier.classify(inputInstance));
+        System.out.println("Classification result: " + classifier.classify(inputInstance));
     }
 
     private static Dataset readTainingDataset() throws IOException {
