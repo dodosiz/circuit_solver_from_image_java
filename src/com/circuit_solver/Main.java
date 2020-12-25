@@ -1,6 +1,7 @@
 package com.circuit_solver;
 
 import com.circuit_solver.classification.ClassificationExcecutor;
+import com.circuit_solver.docs.Clustering;
 
 import java.io.IOException;
 
